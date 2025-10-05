@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIJ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0; user-scalable=0;” >
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    </div>
+        <h3 class="topic">DIJKSTRA VISUAL</h3>
+    <div class="container">
+        <div class="world">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <marker id="endarrowhead" markerWidth="10" markerHeight="7" refX="20" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="" />
+                    </marker>
+                    <marker id="startarrowhead" markerWidth="10" markerHeight="7" refX="-10" refY="3.5" orient="auto">
+                        <polygon points="10 0, 10 7, 0 3.5" fill="" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <div class="info"></div>
+    <div class="edgeList"></div>
+    <div id="insec">
+        <input type="checkbox" id="biCheck" onchange="setBi()">
+        <label for="biCheck" id="biCheckLabel">Bi-dir</label>
+        <input type="checkbox" id="fillRndCost" onchange="fillRandomCost()">
+        <label for="fillRndCost" id="fillRndCostLabel">Fill Random</label>
+        <br>
+        <button id="selectSe" onclick="selectStartEnd()">Start End</button>
+        <button id="btnDij" onclick="startDij()">DIJ</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
