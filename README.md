@@ -1,1 +1,1 @@
-# diksUI
+# dijkstra-visual
