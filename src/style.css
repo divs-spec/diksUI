@@ -1,0 +1,98 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.topic{
+    text-align: center;
+}
+
+.world {
+    border: 2px solid #2e2f3e;
+    width: 50vw;
+    height: 80vh;
+    position: relative;
+    background-color: #d0d1df;
+}
+
+@media screen and (max-width: 992px) {
+    .world {
+        border: 2px solid #2f59d8;
+        width: 100vw;
+        height: 60vh;
+    }
+}
+
+.vertex {
+    background-color: #0a0abc;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    cursor: cell;
+}
+
+.cost{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    fill: black;
+    text-anchor: middle;
+    cursor: text;
+}
+
+.colorEdge{
+    background-color: red;
+}
+
+.colorEdgeBegin{
+    background-color: green;
+}
+
+.info {
+    position: absolute;
+    top: 20vh;
+    left: 80vw;
+}
+
+.edgeList {
+    position: absolute;
+    top: 56vh;
+    left: 80vw;
+    background-color: #d4d5dd;
+    padding: 10px;
+}
+
+.edgeList:empty{
+    display: none;
+}
+
+#selectSe{
+    margin-bottom: 20px;
+}
+
+#btnDij{
+    margin: 10px;
+    background-color: #2f59d8;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    .info {
+        position: static;
+        padding: 50px;
+    }
+    .edgeList {
+        position: static;
+        padding-left: 50px;
+    }
+}
